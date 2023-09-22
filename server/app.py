@@ -39,7 +39,7 @@ def games():
 
     return response
 
-@app.route('/reviews', methods=['GET', 'POST'])
+@app.route('/reviews', methods=['GET', 'POST', 'PATCH'])
 def reviews():
 
     if request.method == 'GET':
